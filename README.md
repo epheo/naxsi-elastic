@@ -11,6 +11,9 @@ Log lines can be received from various ways :
   * Log files : multiple logfiles can be provided, and it supports globbing
   * Syslog : naxsi-elastic can create & read from named pipes, convenient to plug it directly to rsyslog
 
+Requirements
+  * GeoIP `pip install geoip`
+
 Examples :
   * head -n 100 bla.log | python es_import.py -f "" # read log lines from STDIN
   * python es_import.py -f "foo/bar/*/foo*.log"
